@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>index</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+		<link rel="stylesheet" href="css/jcarousel.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lightbox.min.js"></script>
+		<script type="text/javascript">
+		$('.carousel').carousel({
+  			interval: 500
+		})
+
+		jQuery( document ).ready(function() {
+			jQuery('#button_up i').mouseover( function(){
+				jQuery( this ).animate({opacity: 0.65},100);
+			}).mouseout( function(){
+				jQuery( this ).animate({opacity: 1},100);
+			}).click( function(){
+				window.scroll(0 ,0); 
+				return false;
+			});
+
+			jQuery(window).scroll(function(){
+				if ( jQuery(document).scrollTop() > 0 ) {
+					jQuery('#button_up').fadeIn('fast');
+				} else {
+					jQuery('#button_up').fadeOut('fast');
+				}
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header class="top">
+				<div class="container">
+					<div class="grid-12">
+						<nav class="menu">
+							<a class="logo" href=""><img class="bg" src="css/img/logo.png"></a>
+							<ul class="main-menu">
+								<li class="active"><a href="">Главная</a></li>
+								<li><a href="">О нас</a></li>
+								<li><a href="">Галерея</a></li>
+								<li><a href="">В наличии</a></li>
+								<li><a href="">Статьи</a></li>
+								<li><a href="">Контакты</a></li>
+								<li class="btn-zakaz"><a href="">Заказать</a></li>
+							</ul>	
+						</nav>
+					</div>
+				</div>
+			</header>
+				<!--parallax-->
+					<div class="parallax">
+					  	<div class="container">
+						  	<div class="grid-12">
+						  		<div class="parallax-p">
+						  			<h1>Vintage Design</h1>
+						  			<p class="parallax-h">Зеркальная мастерская</p>
+						  			<p class="parallax-text">Основой деятельности мастерской является преображение зеркала или стекла до состояния произведения искусства. Мы искренне рады смелым идеям и готовы воплотить их в жизнь. Приоритетом для себя мы выбрали создание единичных и неповторимых работ из зеркал и создание индивидуальных работ для интерьера. Там где другие разводят руками и говорят что это невозможно, мы добиваемся цели.</p>
+						  		</div>
+						  	</div>
+					  	</div>
+					</div>
+				<!--parallax-->
+				<!--katalog-->
+				<div class="container">
+					<div class="grid-12">
+						<div class="katalog-block">	
+							<div class="katalog-img">
+								<a href=""><img src="css/img/eglo.jpg"></a>
+							</div>
+							<div class="katalog-text">
+								<div class="border"></div>
+								<h2>Эгломизе</h2>
+								<p>В этом разделе представлены произведения, выполненные в технике эгломизе. Этот вид украшения стекла является одним из самых древних и известен еще с римских времен. В настоящее время Эгломизе, одна из красивейших техник декорирования стекла и редкий гость в витражных мастерских.</p>
+								<a href="">Подробнее</a>
+							</div>
+						</div>
+						<div class="katalog-block">	
+							<div class="katalog-text">
+								<div class="border"></div>
+								<h2>Состаренное зеркало</h2>
+								<p>Состаренное зеркало, это зеркало с эффектом потертости , небольших царапин, слегка сошедшей амальгамы. Глядясь в него,создается ощущение что ты окунулся в  прошлое лет 100 назад. Как правило его устанавливают  в такой-же состаренный багет, либо в такого же вида мебель.</p>
+								<a href="">Подробнее</a>
+							</div>
+							<div class="katalog-img">
+								<a href=""><img src="css/img/vintage.jpg"></a>
+							</div>
+						</div>
+						<div class="katalog-block">	
+							<div class="katalog-img">
+								<a href=""><img src="css/img/interer.jpg"></a>
+							</div>
+							<div class="katalog-text">
+								<div class="border"></div>
+								<h2>Интерьерные зеркала</h2>
+								<p>Интерьерные зеркала – комбинация различных техник и обрамления зеркал под интерьер помещения.</p>
+								<a href="">Подробнее</a>
+							</div>
+						</div>
+						<div class="katalog-block">	
+							<div class="katalog-text">
+								<div class="border"></div>
+								<h2>Объемная гравировка</h2>
+								<p>Создание на стекле или зеркале объемного узора или даже целой композиции. Превращает даже простой рисунок в произведение искусства за счет объема изображения. Непередаваемо играет с Led-подсветкой в качестве элемента декора, а метод золочения придает работе с объемной гравировкой поистине царский вид.</p>
+								<a href="">Подробнее</a>
+							</div>
+							<div class="katalog-img">
+								<a href=""><img src="css/img/volume.jpg"></a>
+							</div>
+						</div>
+						<div class="katalog-block">	
+							<div class="katalog-img">
+								<a href=""><img src="css/img/pannel.jpg"></a>
+							</div>
+							<div class="katalog-text">
+								<div class="border"></div>
+								<h2>Зеркальные панно</h2>
+								<p>Зеркальные панно – это декоративные настенные и потолочные композиции. На кухне, в прихожей, холле или столовой-гостиной – это один из наиболее доступных и неповторимых материалов для декора интерьера, а многообразие геометрических форм и вариантов дополнительной обработки (старение, золочение, дополнительное амальгирование узора) позволяют зеркальному панно приукрасить любой интерьер.</p>
+								<a href="">Подробнее</a>
+							</div>
+						</div>
+						<div class="katalog-block">	
+							<div class="katalog-text">
+								<div class="border"></div>
+								<h2>Венецианские зеркала</h2>
+								<p>Венецианские изделия отличаются от «ширпотреба» индивидуальным подходом. Каждое изделие изготавливается только вручную, поэтому ценность таких изделий достаточно высока.</p>
+								<a href="">Подробнее</a>
+							</div>
+							<div class="katalog-img">
+								<a href=""><img src="css/img/ven.jpg"></a>
+							</div>
+						</div>
+						<div class="katalog-block">
+							<div class="katalog-img">
+								<a href=""><img src="css/img/golden.jpg"></a>
+							</div>	
+							<div class="katalog-text">
+								<div class="border"></div>
+								<h2>Зеркала с золочением</h2>
+								<p>Венецианские изделия отличаются от «ширпотреба» индивидуальным подходом. Каждое изделие изготавливается только вручную, поэтому ценность таких изделий достаточно высока.</p>
+								<a href="">Подробнее</a>
+							</div>
+						</div>
+						<div class="katalog-block">	
+							<div class="katalog-text">
+								<div class="border"></div>
+								<h2>Зеркала-призраки</h2>
+								<p>Венецианские изделия отличаются от «ширпотреба» индивидуальным подходом. Каждое изделие изготавливается только вручную, поэтому ценность таких изделий достаточно высока.</p>
+								<a href="">Подробнее</a>
+							</div>
+							<div class="katalog-img">
+								<a href=""><img src="css/img/golden.jpg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--katalog-->
+				<!--
+				<div class="icons-bg-color">
+					<section class="container">
+						<div class="col3 col3icon">
+							<article class="item">
+								<div class="rotate">
+									<figure class="front">
+										<img src="css/img/icon1.png">
+									</figure>
+								</div>
+								<p class="h-icon">11 лет на рынке</p>
+							</article>
+							<article class="item">
+								<div class="rotate">
+									<figure class="front">
+										<img src="css/img/icon2.png">
+									</figure>
+								</div>
+								<p class="h-icon">Уникальные технологии</p>
+							</article>
+							<article class="item">
+								<div class="rotate">
+									<figure class="front">
+										<img src="css/img/icon3.png">
+									</figure>
+								</div>
+								<p class="h-icon">Непревзойденное качество</p>
+							</article>
+						</div>
+					</section>
+				</div>
+			-->
+				
+				<!--slider-->
+				<div class="slider-bg-color">
+				<div class="container">
+					<div class="grid-12">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						  <div class="item active">
+						      <div class="col3 col3icon">
+								<article class="item">
+									<img src="css/img/otzyv-2.png">
+									<p class="h-icon">Марина А.</p>
+									<p class="text-icon">Благодарю зеркальную мастерскую Vintage-Design за прекрасную идею и великолепное её воплощение! Обычная прихожая с винтажным зеркалом в раме с позолотой превращается в приёмную вельможи. Обязательно сделаю заказ для подарка, другого такого нигде не найти. Еще раз огромное спасибо!</p>
+								</article>
+								<article class="item">
+									<img src="css/img/otzyv-1.png">
+									<p class="h-icon">Дизайнер Андрюшов Михаил.</p>
+									<p class="text-icon">Доброго времени суток! За долгое время проектно-дизайнерской деятельности я наконец-то нашел в лице зеркальной мастерской Vintage-Design надежного партнера, способного воплотить в жизнь любой, даже самый креативный и сложный замысел. </p>
+								</article>
+								<article class="item">
+									<img src="css/img/otzyv-3.jpg">
+									<p class="h-icon">Александр Корнеев</p>
+									<p class="text-icon">Спасибо винтажной мастерской за отличное зеркало! Заказал в офис, очень доволен.</p>
+								</article>
+							</div>
+							</div>
+						    <div class="item">
+						      <div class="col3 col3icon">
+								<article class="item">
+									<img src="css/img/otzyv-4.jpg">
+									<p class="h-icon">Рассказова Жанна</p>
+									<p class="text-icon">Всю жизнь мечтала о красивом зеркале как у принцессы. В компании Винтаж Дизайн осуществили мою мечту и создали чудесное зеркало с состаренном стиле! Обязательно посоветую именно вашу мастерскую своим друзьям и знакомым!</p>
+								</article>
+								<article class="item">
+									<img src="css/img/otzyv-5.jpg">
+									<p class="h-icon">Елистратов Евгений</p>
+									<p class="text-icon">Благодарю зеркальную мастерскую Vintage Design за чудесное исполнение моего заказа. Радуюсь отличному зеркалу с Led-подсветкой. Спасибо, друзья!</p>
+								</article>
+								<article class="item">
+									<img src="css/img/otzyv-6.jpg">
+									<p class="h-icon">Маркелова Анна</p>
+									<p class="text-icon">Хотелось бы поблагодарить коллектив Vintage-Design за целеустремленность, ответственность и превосходное качество работы, которое не вызывает нареканий даже у самого требовательного и придирчивого заказчика. Рада сотрудничеству и желаю дальнейшего творческого роста и успеха.</p>
+								</article>
+						    </div>
+						  </div>
+						   <div class="item">
+						      <div class="col3 col3icon">
+								<article class="item">
+									<img src="css/img/otzyv-7.jpg">
+									<p class="h-icon">Федосеева Елена</p>
+									<p class="text-icon">Спасибо ребятам из мастерской Винтаж Дизайн за качественную и красивую работу. Сделала подарок любимой маме, преобразовав ее старое зеркало. Вы профессионалы с большой буквы!</p>
+								</article>
+								<article class="item">
+									<img src="css/img/otzyv-8.jpg">
+									<p class="h-icon">Собриятнова Валентина</p>
+									<p class="text-icon">Я парикмахер. И для моей парикмахерской очень важно показать клиенту, как он выглядит. Клиенты всегда обращают внимание на чудесную работу мастерской Vintage Design! Довольные клиенты - огромный плюс для любого бизнеса. </p>
+								</article>
+								<article class="item">
+									<img src="css/img/otzyv-9.jpg">
+									<p class="h-icon">Емельянова Светлана</p>
+									<p class="text-icon">Я являюсь дизайнером интерьеров и хотела бы сказать спасибо за зеркало для гостинной. Всевозможные виды обработок зеркал и стекла, авторские изобретения и уникальные методики позволяют не ограничивать полет фантазии, что особенно важно для профессионального дизайнера.</p>
+								</article>
+						    </div>
+						  </div>
+						</div>
+						<!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+						 <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						  </ol>
+					</div>
+					</div>
+					</div>
+					</div>
+				<!--slider-->
+				<!--block-->
+					<div class="bg-block">
+						<div class="container">
+							<div class="grid-12">
+								<!-- Button trigger modal -->
+								<div class="button-center">
+									<button class="bt" data-toggle="modal" data-target="#myModal">Заказать</button>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								        <h4 class="modal-title" id="myModalLabel">Заказать</h4>
+								      </div>
+								      <div class="modal-body">
+								       <form>
+											<!-- <p class="error">Заполните поле</p> -->
+											<!-- <p class="success">Ваше сообщение отправлено</p> -->
+											<p class="p-form">Ваше имя:* </p>
+											<input class="form-input" type="text" value="" name="NAME" size="40" required>
+											<p class="p-form">Ваш телефон:* </p>
+											<input class="form-input" type="text" value="" name="PHONE" size="40" required>
+											<p class="p-form">Ваш e-mail: </p>
+											<input class="form-input" type="text" value="" name="EMAIL" size="40">
+											<p class="p-form">Поле для текста: </p>
+											<textarea class="form-input" name="textarea" cols="80" rows="5"></textarea>
+											<p class="form-info">* - поля обязательные для заполнения</p>
+											<input class="bt" type="submit" value="Отправить">
+										</form>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+								<!-- Button trigger modal -->
+							</div>
+						</div>
+					</div>
+				<!--block-->
+					
+			<div id="footer">
+				<div class="contacts">
+						<div class="container">
+							<div class="grid-12">
+								<div class="col2">
+									<div class="item">
+										<div class="karta"></div>
+									</div>
+									<div class="item">
+										<ul>
+											<li><i class="fa fa-map-marker"></i>Адрес: г.Пенза, ул. Московская, 1</li>
+											<li><i class="fa fa-phone"></i>Контактный телефон: +7 (987) 123-45-67</li>
+											<li><i class="fa fa-at"></i>E-mail: <a href="">index@inbox.ru</a></li>
+										</ul>
+										<div class="icons">
+											<a href=""><img src="css/img/icon-1.png"></a>
+											<a href=""><img src="css/img/icon-2.png"></a>
+											<a href=""><img src="css/img/icon-3.png"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<div class="container">
+						<div class="grid-12">
+							<p>Все права сохранены, 2015 Vintage Design</p>
+							<a class="m-studio" href="http://studios-m.ru" title="Мы делаем сайты" target="_blank"><img src="css/img/logo-st.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="button_up"><i class="fa fa-angle-up"></i></div>
+		</div>
+	</body>
+</html>	

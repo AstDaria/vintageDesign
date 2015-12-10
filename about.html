@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>index</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+		<link rel="stylesheet" href="css/jcarousel.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/lightbox.min.js"></script>
+		<script type="text/javascript">
+		$('.carousel').carousel({
+  			interval: 500
+		})
+
+		jQuery( document ).ready(function() {
+			jQuery('#button_up i').mouseover( function(){
+				jQuery( this ).animate({opacity: 0.65},100);
+			}).mouseout( function(){
+				jQuery( this ).animate({opacity: 1},100);
+			}).click( function(){
+				window.scroll(0 ,0); 
+				return false;
+			});
+
+			jQuery(window).scroll(function(){
+				if ( jQuery(document).scrollTop() > 0 ) {
+					jQuery('#button_up').fadeIn('fast');
+				} else {
+					jQuery('#button_up').fadeOut('fast');
+				}
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header class="top">
+				<div class="container">
+					<div class="grid-12">
+						<nav class="menu">
+							<a class="logo" href=""><img class="bg" src="css/img/logo.png"></a>
+							<ul class="main-menu">
+								<li class="active"><a href="">Главная</a></li>
+								<li><a href="">О нас</a></li>
+								<li><a href="">Галерея</a></li>
+								<li><a href="">В наличии</a></li>
+								<li><a href="">Контакты</a></li>
+								<li class="btn-zakaz"><a href="">Заказать</a></li>
+							</ul>	
+						</nav>
+					</div>
+				</div>
+			</header>
+				<article>
+				<div class="article-border">
+					<div class="container">
+						<div class="grid-12">
+							<div class="article-text">
+								<p>Основой деятельности мастерской <span>Vintage Design</span> является преображение зеркала или стекла до состояния произведения искусства. Мы искренне рады смелым идеям и готовы воплотить их в жизнь. Приоритетом для себя мы выбрали создание единичных и неповторимых работ из зеркал и создание индивидуальных работ для интерьера. Мы находимся в постоянном движении и поиске новых решений и возможностей.</p>
+								<p class="article-color">Там где другие разводят руками и говорят что это невозможно, мы добиваемся цели.</p>
+								<p>Мастерская <span>Vintage Design</span> предлагает возможность соединения множества техник в одном полотне. Плодами наших исследований стало возрождение техники <b>Эгломизе</b>, стекло с нанесением зеркального рисунка, зеркала призраки и наша гордость <b>Криптотипия</b>.</p>
+								<div class="border-article"></div>
+								<p>Мы не остановимся на достигнутом и будем развивать направления дальше. Мы дорожим своим именем и отвечаем за качество наших работ. Работа с заказчиком ведется индивидуально с учетом его потребностей. Цена на каждую работу считается отдельно исходя от размера, типа и сложности.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				</article>
+				<div id="footer">
+					<div class="copy">
+						<div class="container">
+							<div class="grid-12">
+								<p>Все права сохранены, 2015 Vintage Design</p>
+								<a class="m-studio" href="http://studios-m.ru" title="Мы делаем сайты" target="_blank"><img src="css/img/logo-st.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="button_up"><i class="fa fa-angle-up"></i></div>
+		</div>
+	</body>
+</html>	
